@@ -1,0 +1,14 @@
+
+    <h1>Stupid Coaching</h1>
+    <h2>Ask your coach anything</h2> <!-- Add this -->
+
+<% if @question.split("").include?("?") %>
+  <h3>Silly question, get dressed and go to work!</h3>
+<% elsif @question == "I am going to work"%>
+  <h3>"Great!"</h3>
+  <% else %>
+  <h3>"I don't care, get dressed and go to work!"</h3>
+<% end %>
+
+
+<%= link_to "ask another question","/ask"%>
